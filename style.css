@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.dark {
+    color-scheme: dark;
+}
+
+#networkAddresses li,
+#failedAccounts li {
+    background-color: rgba(55, 65, 81, 0.5);
+    border-radius: 0.375rem;
+    padding: 0.75rem;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#networkAddresses li:hover,
+#failedAccounts li:hover {
+    background-color: rgba(75, 85, 99, 0.7);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.copy-btn {
+    background-color: rgba(59, 130, 246, 0.5);
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: rgba(59, 130, 246, 0.7);
+}

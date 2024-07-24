@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그 파일 분석기</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold mb-8">로그 파일 분석기</h1>
+        <div class="mb-8">
+            <label for="fileInput" class="block mb-2">로그 파일 선택:</label>
+            <input type="file" id="fileInput" accept=".txt"
+                class="block w-full text-sm text-gray-300 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700">
+        </div>
+        <div id="result">
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4">원본 네트워크 주소:</h2>
+                <ul id="networkAddresses" class="space-y-2"></ul>
+            </div>
+            <div>
+                <h2 class="text-2xl font-semibold mb-4">로그온 실패 계정 (시도 횟수 내림차순):</h2>
+                <ul id="failedAccounts" class="space-y-2"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
